@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pokeman</title>
+        <meta charset="UTF-8">
+        <link href="Pokemon.css" rel="stylesheet">
+        <script type="text/javascript" src= "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            $(document).ready(function(){
+                var HTMLstring;
+                for(var i = 1; i < 152; i++){
+                    HTMLstring = '<img src="http://pokeapi.co/media/img/';
+                    HTMLstring += i;
+                    HTMLstring += '.png"';
+                    HTMLstring += ' alt="Pokeman Picture">';
+                    $(".container").append(HTMLstring);
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            
+        </div>
+    </body>
+</html>
